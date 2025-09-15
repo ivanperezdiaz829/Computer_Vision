@@ -61,3 +61,16 @@ Esta tarea consiste en obtener de una [imagen](Resources/Imagen.jpg) el punto m�
 
 Una vez obtenidos los mínimos y máximos, haciendo uso del método *.circle* se crea un círculo sobre la imagen en el la localización del mínimo (verde) y del máximo (rojo), tras esto se muestra el plot con una leyenda explicando el código de color, además de quitar las marcas cómo en la tarea anterior y mostrar por último, las coordenadas e intensidad de color del punto más brillante y del punto más oscuro.
 
+## Diseño Pop Art con la entrada de la cámara web
+
+En esta tarea se va a hacer uso de la entrada de la cámara web del dispositivo en el cuál se ejecute el código, consiste en utilizar la entrada para crear una imagen con diseño [Pop Art](https://es.wikipedia.org/wiki/Arte_pop).
+
+Para la entrada de la cámara se utiliza un método llamado *.VideoCapture* que pilla la entrada de la cámara por defecto (no se controla el caso de que falle pero devolvería None en dicho caso), tras esto se lee continuamente la entrada de imagenes y los pone cómo frame.
+
+Una vez realizado lo anterior, se define un frame con un ancho y una altura determinadas y tras esto, 9 subframes que lo van a componer (3x3) con las dimensiones pertinentes.
+
+Para crear las variantes de color, se utiliza un método llamado *.applyColorMap* con los subframes y un *COLORMAP* asociado. Ya creadas las variantes de color, se juntan por filas y por último, se crea el collage por columnas usando las 3 filas.
+
+Se muestra de manera similar a las tareas anteriores.
+
+Para salir de la ventana se espera a que se pulse la tecla Esc.
