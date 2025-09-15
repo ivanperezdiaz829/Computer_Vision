@@ -1,3 +1,5 @@
+<!-- @import "design/style.css" -->
+
 # **PRIMER CONJUNTO DE TAREAS A REALIZAR**
 
 ## Índice
