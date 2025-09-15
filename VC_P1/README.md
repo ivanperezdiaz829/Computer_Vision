@@ -47,8 +47,17 @@ En esta tarea, mediante el uso del framework *OpenCV* se va a crear una imagen d
 
 Por último, haciendo uso de la función de *matplotlib* llamada *.xticks* e *.yticks* se ha creado una función con nombre *delete_ticks* para que el plot no aparezca con las marcas en los ejes. Se muestra la imagen igual que en la tarea anterior.
 
-
 ## Modificar el plano de una imagen
 
-La tarea consiste en cargar una [imagen](Resources/Imagen.jpg) 
+La tarea consiste en cargar una [imagen](Resources/Imagen.jpg) y cambiarle el plano de color, en este caso, se ha decidido utilizar los canales R, G, B (Red, Green, Blue) en escala de grises y mostrar cada imagen en un formato de filas. Para ello, se ha creado un método llamado *color_channel* al cuál se le pasan como parámetros el color, el texto a poner en la imagen y la posición que ocupa en el formato de salida.
+
+Por último, se muestra otra imagen con los tres planos de color juntos, si se ha realizado correctamente, dicha imagen deberá ser igual a la [original](Resources/Imagen.jpg).
+
+Resaltar que el método *.imread* lee la imagen de manera que los canales se ordenan en B, G, R, por lo que para mostrar la imagen con los planos juntos se realiza una conversión a R, G, B.
+
+## Obtener punto más oscuro y brillante de una imagen
+
+Esta tarea consiste en obtener de una [imagen](Resources/Imagen.jpg) el punto más brillante y oscura de la misma, para ello se lee en escala de grises y mediante el método *minMaxLoc* de obtienen los mínimos y máximos locales.
+
+Una vez obtenidos los mínimos y máximos, haciendo uso del método *.circle* se crea un círculo sobre la imagen en el la localización del mínimo (verde) y del máximo (rojo), tras esto se muestra el plot con una leyenda explicando el código de color, además de quitar las marcas cómo en la tarea anterior y mostrar por último, las coordenadas e intensidad de color del punto más brillante y del punto más oscuro.
 
