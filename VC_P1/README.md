@@ -50,5 +50,5 @@ Por último, haciendo uso de la función de *matplotlib* llamada *.xticks* e *.y
 
 ## Modificar el plano de una imagen
 
-La tarea consiste en cargar una [imagen](Computer_vision/VC_P1/Resources/imagen.png) 
+La tarea consiste en cargar una [imagen](*/Resources/imagen.png) 
 
