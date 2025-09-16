@@ -89,4 +89,6 @@ Para salir de la ventana se espera a que se pulse la tecla Esc.
     - https://chatgpt.com
     - https://www.chess.com/es/article/view/dimensiones-del-tablero
 
+Para ver el resultado y código de las tareas, véase el [Notebook](./Exercises_P1.ipynb) asociado a la carpeta de la práctica en cuestión **(VC_P1)**.
+
 ### **--- Iván Pérez Díaz ---**
