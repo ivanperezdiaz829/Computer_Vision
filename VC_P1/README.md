@@ -9,7 +9,7 @@
 - [Imagen estilo Mondrian](#imagen-estilo-mondrian)
 - [Utilización de las funciones de dibujo de OpenCV](#utilización-de-las-funciones-de-opencv)
 - [Modificar el plano de una imagen](#modificar-el-plano-de-una-imagen)
-- [Obtener punto más oscuro y brillante de una imagen](#obtener-punto-más-oscuro-y-brillante-de-una-imagen)
+- [Obtener el punto más oscuro y brillante de una imagen](#obtener-el-punto-más-oscuro-y-brillante-de-una-imagen)
 - [Diseño Pop Art con la entrada de la cámara web](#diseño-pop-art-con-la-entrada-de-la-cámara-web)
 - [Fuentes y Documentación](#fuentes-y-documentación)
 
@@ -55,7 +55,7 @@ Por último, se muestra otra imagen con los tres planos de color juntos, si se h
 
 Resaltar que el método *.imread* lee la imagen de manera que los canales se ordenan en B, G, R, por lo que para mostrar la imagen con los planos juntos se realiza una conversión a R, G, B.
 
-## Obtener punto más oscuro y brillante de una imagen
+## Obtener el punto más oscuro y brillante de una imagen
 
 Esta tarea consiste en obtener de una [imagen](Resources/Imagen.jpg) el punto más brillante y oscura de la misma, para ello se lee en escala de grises y mediante el método *minMaxLoc* de obtienen los mínimos y máximos locales.
 
