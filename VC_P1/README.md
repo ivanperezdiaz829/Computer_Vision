@@ -81,10 +81,10 @@ Para salir de la ventana se espera a que se pulse la tecla Esc.
 
 - **Inteligencia Artificial Generativa (ChatGPT):** Se ha utilizado para obtener un listado de métodos y funciones de **OpenCV**, así como para revisar posibles fallos en la realñización de las tareas ["Modificar el plano de una imagen"](#modificar-el-plano-de-una-imagen) y ["Diseño Pop Art con la entrada de la cámara web"](#diseño-pop-art-con-la-entrada-de-la-cámara-web).
 
-**Enlaces:**
-https://estudio-grafico.blogspot.com/2021/02/estilo-mondrian.html
-https://es.wikipedia.org/wiki/Arte_pop
-https://chatgpt.com
-https://www.chess.com/es/article/view/dimensiones-del-tablero
+- **Enlaces:**
+    - https://estudio-grafico.blogspot.com/2021/02/estilo-mondrian.html
+    - https://es.wikipedia.org/wiki/Arte_pop
+    - https://chatgpt.com
+    - https://www.chess.com/es/article/view/dimensiones-del-tablero
 
 ### **--- Iván Pérez Díaz ---**
