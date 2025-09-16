@@ -87,4 +87,4 @@ https://es.wikipedia.org/wiki/Arte_pop
 https://chatgpt.com
 https://www.chess.com/es/article/view/dimensiones-del-tablero
 
-### ** --- Iván Pérez Díaz --- **
+### **--- Iván Pérez Díaz ---**
