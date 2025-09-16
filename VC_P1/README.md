@@ -7,7 +7,7 @@
 - [Preparativos para las tareas](#preparativos-para-las-tareas)
 - [Tablero de ajedrez](#tablero-de-ajedrez)
 - [Imagen estilo Mondrian](#imagen-estilo-mondrian)
-- [Utilización de las funciones de dibujo de OpenCV](#utilización-de-las-funciones-de-dibujo-de-opencv)
+- [Utilización de las funciones de dibujo de OpenCV](#utilización-de-las-funciones-de-opencv)
 - [Modificar el plano de una imagen](#modificar-el-plano-de-una-imagen)
 - [Obtener punto más oscuro y brillante de una imagen](#obtener-punto-más-oscuro-y-brillante-de-una-imagen)
 - [Diseño Pop Art con la entrada de la cámara web](#diseño-pop-art-con-la-entrada-de-la-cámara-web)
@@ -74,3 +74,17 @@ Para crear las variantes de color, se utiliza un método llamado *.applyColorMap
 Se muestra de manera similar a las tareas anteriores.
 
 Para salir de la ventana se espera a que se pulse la tecla Esc.
+
+## Fuentes y Documentación
+
+- **Internet:** Se ha utilizado internet para la búsqueda de información relativa a los estilos y dieseños de las imágenes a realizar en las tareas, por ejemplo, el tamaño de una tablero de [ajedrez](https://www.chess.com/es/article/view/dimensiones-del-tablero) (8x8), información del estilo [Mondrian](https://estudio-grafico.blogspot.com/2021/02/estilo-mondrian.html) y del estilo [Pop Art](https://es.wikipedia.org/wiki/Arte_pop).
+
+- **Inteligencia Artificial Generativa (ChatGPT):** Se ha utilizado para obtener un listado de métodos y funciones de **OpenCV**, así como para revisar posibles fallos en la realñización de las tareas ["Modificar el plano de una imagen"](#modificar-el-plano-de-una-imagen) y ["Diseño Pop Art con la entrada de la cámara web"](#diseño-pop-art-con-la-entrada-de-la-cámara-web).
+
+- **Enlaces:**
+https://estudio-grafico.blogspot.com/2021/02/estilo-mondrian.html
+https://es.wikipedia.org/wiki/Arte_pop
+https://chatgpt.com
+https://www.chess.com/es/article/view/dimensiones-del-tablero
+
+### ** --- Iván Pérez Díaz --- **
