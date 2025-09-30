@@ -59,10 +59,11 @@ Realizado lo anterior, se procede a empezar con las tareas que conforman la prá
 
 ## Número máximo de píxeles blancos
 
-La tarea consiste en cargar una imagen y aplicar el detector de bordes Canny para obtener un resultado binario (bordes en blanco y fondo en negro).
-Posteriormente, se cuentan los píxeles blancos presentes en cada fila de la imagen y se identifica cuál es la fila con mayor número de bordes.
-Con este valor máximo, se seleccionan todas las filas que tienen al menos el 90% de dicho número de píxeles blancos.
-Finalmente, se muestran tres resultados: la imagen de Canny, la imagen original con las filas destacadas en rojo y un gráfico con el porcentaje de píxeles blancos por fila.
+La tarea consiste en cargar una imagen y aplicar el detector de bordes **[Canny](https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html)** para obtener un resultado binario (bordes en blanco y fondo en negro).
+
+Posteriormente, se cuentan los píxeles blancos presentes en cada fila de la imagen y se identifica cuál es la fila con mayor número de bordes. Con este valor máximo, se seleccionan todas las filas que tienen al menos el 90% de dicho número de píxeles blancos.
+
+Finalmente, se muestran tres resultados: la imagen **[Canny](https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html)**, la [imagen original](../VC_P2/Resources/mandril.jpg) con las filas destacadas en rojo y un gráfico con el porcentaje de píxeles blancos por fila.
 
 ## Umbralizado de imagen a 8 bits
 
@@ -102,7 +103,7 @@ En esta tarea se propone un demostrador de los modos de detección de bordes apl
 
 - **"s", sobel:** Convierte la imagen de entrada en una escala de blancos y grises para después de umbralizarla mostrar únicamente los bordes detectados.
 
-- **"x", sobel filas y columnas:** Usando el método para la obtención de filas y columnas de modo sobel creado para la tarea anterior, se aplica pero a la imagen de entrada de la WebCam.
+- **"x", sobel filas y columnas:** Usando el método para la obtención de filas y columnas de modo sobel creado para la tarea anterior, se aplica a la imagen de entrada de la WebCam.
 
 - **"f", substracción de fondo:** Usando una cámara fija se construye un fondo sin demasiado movimiento y en cada iteración de la captura de fotogramas se compara si un pixel ha cambiado de estado y lo pone en blanco.
 
@@ -111,14 +112,20 @@ Para cambiar los modos de visualización, se ha de pulsar por teclado las teclas
 ## Interactive Motion Art
 
 La inspiración del proyecto viene de tres fuentes: 
-My little piece of privacy, que plantea la captura de la presencia de las personas y la generación de una respuesta visual; 
-Messa di voce, que explora la manipulación de colores y planos de imagen para crear efectos artísticos; 
-Virtual air guitar, que propone la interacción en tiempo real con los movimientos del espectador frente a la cámara. 
-El concepto consiste en una instalación donde la cámara capta a la persona en tiempo real, detecta movimientos o cambios en la escena y genera un efecto visual dinámico basado en los bordes, colores y diferencias entre frames, creando una especie de “pintura en tiempo real” que refleja la interacción del espectador con el espacio. El código convierte los frames a escala de grises, aplica suavizado Gaussiano para reducir el ruido, calcula los bordes mediante el filtro Sobel y detecta movimiento comparando el frame actual con el anterior. En la ventana principal, Demostrador Interactivo, las zonas con movimiento se colorean en rojo y se superponen los bordes Sobel para generar un efecto visual artístico. La ventana Movimiento muestra únicamente la máscara binaria del movimiento detectado entre frames consecutivos, mientras que la ventana Fondo presenta el modelo del fondo estimado por el background subtractor, permitiendo diferenciar claramente los objetos móviles del fondo estático. La ejecución se realiza en tiempo real y finaliza al pulsar la tecla ESC, liberando todos los recursos de la cámara.
+
+- [My little piece of privacy](https://www.niklasroy.com/project/88/my-little-piece-of-privacy), que plantea la captura de la presencia de las personas y la generación de una respuesta visual; 
+
+- [Messa di voce](https://youtu.be/GfoqiyB1ndE?feature=shared), que explora la manipulación de colores y planos de imagen para crear efectos artísticos; 
+
+- [Virtual air guitar](https://youtu.be/FIAmyoEpV5c?feature=shared), que propone la interacción en tiempo real con los movimientos del espectador frente a la cámara. 
+
+El concepto consiste en una instalación donde la cámara capta a la persona en tiempo real, detecta movimientos o cambios en la escena y genera un efecto visual dinámico basado en los bordes, colores y diferencias entre frames, creando una especie de *“pintura en tiempo real”* que refleja la interacción del espectador con el espacio. 
+
+El código convierte los frames a escala de grises, aplica suavizado Gaussiano para reducir el ruido, calcula los bordes mediante el filtro **[Sobel](https://scispace.com/pdf/edge-detection-by-modified-otsu-method-167ccq2st7.pdf)** y detecta movimiento comparando el frame actual con el anterior. En la ventana principal, *Demostrador Interactivo*, las zonas con movimiento se colorean en rojo y se superponen los bordes **[Sobel](https://scispace.com/pdf/edge-detection-by-modified-otsu-method-167ccq2st7.pdf)** para generar un efecto visual artístico. La ventana *Movimiento* muestra únicamente la máscara binaria del movimiento detectado entre frames consecutivos, mientras que la ventana *Fondo* presenta el modelo del fondo estimado por el background subtractor, permitiendo diferenciar claramente los objetos móviles del fondo estático. La ejecución se realiza en tiempo real y finaliza al pulsar la tecla ESC, liberando todos los recursos de la cámara.
 
 ## Fuentes y Documentación
 
-- **Internet:** Se ha utilizado internet para la búsqueda de información relativa al funcionamiento de la estrategia de **[Sobel](https://scispace.com/pdf/edge-detection-by-modified-otsu-method-167ccq2st7.pdf)**, aplicando también el **[Otsu](https://learnopencv.com/otsu-thresholding-with-opencv/)** y de la estrategia de **[Canny](https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html)**. Adicionalmente, para la última tarea se ha tomado inspiración de los vídeos: [My little piece of privacy](https://www.niklasroy.com/project/88/my-little-piece-of-privacy), [Messa di voce](https://youtu.be/GfoqiyB1ndE?feature=shared) y [Virtual air guitar](https://youtu.be/FIAmyoEpV5c?feature=shared).
+- **Internet:** Se ha utilizado internet para la búsqueda de información relativa al funcionamiento de la estrategia de **[Sobel](https://scispace.com/pdf/edge-detection-by-modified-otsu-method-167ccq2st7.pdf)**, aplicando también el **[Otsu](https://learnopencv.com/otsu-thresholding-with-opencv/)** y la estrategia de **[Canny](https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html)**. Adicionalmente, para la última tarea se ha tomado inspiración de los vídeos: [My little piece of privacy](https://www.niklasroy.com/project/88/my-little-piece-of-privacy), [Messa di voce](https://youtu.be/GfoqiyB1ndE?feature=shared) y [Virtual air guitar](https://youtu.be/FIAmyoEpV5c?feature=shared).
 
 - **Inteligencia Artificial Generativa (ChatGPT):** Se ha utilizado la IA generativa para refactorizar el código de la [tarea 2](#umbralizado-de-imagen-a-8-bits) para convertirlo en una función con el objetivo de poder implementarla de manera simple como un modo adicional en la [tarea 3](#modos-de-captura-por-webcam).
 
