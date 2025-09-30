@@ -6,7 +6,7 @@
 
 - [Preparativos para las tareas](#preparativos-para-las-tareas)
 - [Número máximo de píxeles blancos](#número-máximo-de-píxeles-blancos)
-- [Umbralizado de imagen a 8 bits](#umbralizdo-de-imagen-a-8-bits)
+- [Umbralizado de imagen a 8 bits](#umbralizado-de-imagen-a-8-bits)
 - [Modos de captura por WebCam](#modos-de-captura-por-webcam)
 - [Interactive motion art](#interactive-motion-art)
 - [Fuentes y Documentación](#fuentes-y-documentación)
