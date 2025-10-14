@@ -61,7 +61,7 @@ La imagen resultante (`th_closed`) es una **máscara binaria** que idealmente mu
 
 Al variar las imágenes de entrada del programa, observamos que:
 
-* Con ["Monedas"](../VC_P3/Resources/Monedas.jpg), los contornos de las monedas se detectan correctamente, y se asocian todos los valores correctos excepto por la moneda de 20 céntimos, que se clasifica como un euro (lo que indica un posible error de medición o clasificación en esa instancia).
+* Con ["Monedas"](../VC_P3/Resources/ResMonedas.png), los contornos de las monedas se detectan correctamente, y se asocian todos los valores correctos excepto por la moneda de 20 céntimos, que se clasifica como un euro (lo que indica un posible error de medición o clasificación en esa instancia).
 
 <img src="../VC_P3/Resources/Monedas.jpg" alt="Monedas">
 
@@ -166,5 +166,6 @@ Por último se procede a la evaluación del clasificador sobre la imagen del con
     - https://chatgpt.com/
     - https://gemini.google.com
     - https://www.investopedia.com/terms/r/returnoninvestment.asp
+
 
 Para más documentación referente a las tareas, véase el [Notebook](Exercises_P3.ipynb) asociado a la carpeta de la práctica en cuestión **(VC_P3)**.
