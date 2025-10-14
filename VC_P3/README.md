@@ -63,7 +63,7 @@ Al variar las imágenes de entrada del programa, observamos que:
 
 * Con ["Monedas"](../VC_P3/Resources/ResMonedas.png), los contornos de las monedas se detectan correctamente, y se asocian todos los valores correctos excepto por la moneda de 20 céntimos, que se clasifica como un euro (lo que indica un posible error de medición o clasificación en esa instancia).
 
-<img src="../VC_P3/Resources/Monedas.jpg" alt="Monedas">
+<img src="../VC_P3/Resources/ResMonedas.png" alt="Monedas">
 
 * Con ["Img1"](../VC_P3/Resources/Img1.jpeg), las monedas **no se detectan correctamente**, probablemente porque el soporte sobre el que se tomó la foto no es rígido y uniforme.
 
@@ -169,3 +169,4 @@ Por último se procede a la evaluación del clasificador sobre la imagen del con
 
 
 Para más documentación referente a las tareas, véase el [Notebook](Exercises_P3.ipynb) asociado a la carpeta de la práctica en cuestión **(VC_P3)**.
+
