@@ -69,9 +69,9 @@ Al variar las imágenes de entrada del programa, observamos que:
 
 <img src="../VC_P3/Resources/Res1.png" alt="Img1">
 
-* Mientras que con ["Img4"](../VC_P3/Resources/Img1.jpeg), el programa detecta la mayoría de las monedas, pero con algunos **falsos positivos**.
+* Mientras que con ["Img4"](../VC_P3/Resources/Img4.jpeg), el programa detecta la mayoría de las monedas, pero con algunos **falsos positivos**.
 
-<img src="../VC_P3/Resources/Res2.png" alt="Img4">
+<img src="../VC_P3/Resources/Res4.png" alt="Img4">
 
 ## Modelo clasificador de objetos en una imagen
 
@@ -169,5 +169,6 @@ Por último se procede a la evaluación del clasificador sobre la imagen del con
 
 
 Para más documentación referente a las tareas, véase el [Notebook](Exercises_P3.ipynb) asociado a la carpeta de la práctica en cuestión **(VC_P3)**.
+
 
 
