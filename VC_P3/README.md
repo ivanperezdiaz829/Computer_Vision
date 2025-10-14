@@ -61,17 +61,17 @@ La imagen resultante (`th_closed`) es una **máscara binaria** que idealmente mu
 
 Al variar las imágenes de entrada del programa, observamos que:
 
-* Con ["Monedas"](../VC_P3/Resources/ResMonedas.png), los contornos de las monedas se detectan correctamente, y se asocian todos los valores correctos excepto por la moneda de 20 céntimos, que se clasifica como un euro (lo que indica un posible error de medición o clasificación en esa instancia).
+* Con ["Monedas"](../VC_P3/Resources/Monedas.jpg), los contornos de las monedas se detectan correctamente, y se asocian todos los valores correctos excepto por la moneda de 20 céntimos, que se clasifica como un euro (lo que indica un posible error de medición o clasificación en esa instancia).
 
 <img src="../VC_P3/Resources/ResMonedas.png" alt="Monedas">
 
 * Con ["Img1"](../VC_P3/Resources/Img1.jpeg), las monedas **no se detectan correctamente**, probablemente porque el soporte sobre el que se tomó la foto no es rígido y uniforme.
 
-<img src="../VC_P3/Resources/Img1.jpeg" alt="Img1">
+<img src="../VC_P3/Resources/Res1.png" alt="Img1">
 
-* Mientras que con ["Img4"](../VC_P3/Resources/Img4.jpeg), el programa detecta la mayoría de las monedas, pero con algunos **falsos positivos**.
+* Mientras que con ["Img4"](../VC_P3/Resources/Img1.jpeg), el programa detecta la mayoría de las monedas, pero con algunos **falsos positivos**.
 
-<img src="../VC_P3/Resources/Img4.jpeg" alt="Img4">
+<img src="../VC_P3/Resources/Res2.png" alt="Img4">
 
 ## Modelo clasificador de objetos en una imagen
 
@@ -169,4 +169,5 @@ Por último se procede a la evaluación del clasificador sobre la imagen del con
 
 
 Para más documentación referente a las tareas, véase el [Notebook](Exercises_P3.ipynb) asociado a la carpeta de la práctica en cuestión **(VC_P3)**.
+
 
