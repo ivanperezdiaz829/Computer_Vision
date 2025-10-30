@@ -1,0 +1,26 @@
+# Entornos virtuales
+.conda/
+.venv/
+
+# Archivos de modelo (grandes)
+**/*.pt
+
+# Carpetas de resultados y logs
+**/runs/
+
+# Archivos de datos generados (¡revisa si 'tracking_results.csv' debe ir aquí!)
+VC_P4/tracking_results.csv
+
+# Caché de Python
+__pycache__/
+*.pyc
+
+# Checkpoints de Jupyter
+.ipynb_checkpoints/
+
+# Configuración de IDE
+.vscode/
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db

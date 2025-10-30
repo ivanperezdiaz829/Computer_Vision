@@ -4,8 +4,12 @@
 
 ## Índice
 
+- [Preparativos para las tareas](#preparativos-para-las-tareas)
+- [Análisis y clasificación de monedas](#análisis-y-clasificación-de-monedas)
+- [Modelo de clasificador de imágenes](#modelo-clasificador-de-objetos-en-una-imagen)
+- [Fuentes y Documentación](#fuentes-y-documentación)
 
-## Fuentes y Documentación (MODIFICAR)
+## Fuentes y Documentación
 
 - **Internet:** Se ha utilizado internet para la búsqueda de información acerca de la segmentación y diferentes métricas y características para aplicar las diferentes técnicas ([SMACC: A System for Microplastics Automatic Counting and Classification](https://ieeexplore.ieee.org/document/8976153)) con el objetivo de mejorar la precisión del modelo ejecutado en la [tarea2](#tarea-2). Además, se han buscado los *"emojis"* para los mensajes de creación de imagenes en dicha tarea.
 
