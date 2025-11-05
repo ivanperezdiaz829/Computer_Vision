@@ -15,7 +15,7 @@ if labels_sin_imagen:
     for f in labels_sin_imagen:
         print(f)
 else:
-    print("Todos los labels tienen su imagen correspondiente ✅")
+    print("Todos los labels tienen su imagen correspondiente")
 
 # imágenes sin label
 imagenes_sin_label = image_files - label_files
@@ -24,4 +24,4 @@ if imagenes_sin_label:
     for f in imagenes_sin_label:
         print(f)
 else:
-    print("\nTodas las imágenes tienen su label correspondiente ✅")
+    print("\nTodas las imágenes tienen su label correspondiente")

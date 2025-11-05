@@ -35,4 +35,4 @@ for f in os.listdir(input_dir):
                 # solo 1 clase -> id = 0
                 out.write(f"0 {cx:.6f} {cy:.6f} {w:.6f} {h:.6f}\n")
 
-print("DONE ✅")
+print("DONE")
