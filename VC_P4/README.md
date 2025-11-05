@@ -60,14 +60,26 @@ El directorio del proyecto contiene varios subdirectorios y ficheros que compone
 Es una de las métricas más importantes para evaluar el modelo de detección de objetos entrenado y dice cuál es el mejor "umbral de confianza" a usar en el modelo.
 
 <img src="/VC_P4/runs/train_custom/exp2/BoxF1_curve.png">
+
 **Eje Y:** El valor va de 0.0 a 1.0 y es un equilibrio entre **precisión** (número de matrículas detectadas correctamente) y el **recall** (matrículas que hay en la imagen y han sido detectadas). El resultado obtenido de 0.92 es casi perfecto.
 
 **Eje X:** La confianza va de 0.0 a 1.0 y es el umbral de seguridad que se le exige al modelo para que muestre una detección. Con una confianza baja (p.ej: 0.1) le dices al modelo que te muestre todo lo que creas que puede ser matrícula aunque solo esté seguro a un 10%, por otro lado, con una confuanza alta se le dice al modelo que solo te muestre las matrículas que esté completamente seguro de que lo son.
 
 **Resultados y conclusión:** El texto en la leyenda tiene la respuesta más importante (**all classes 0.92 at 0.452). Significa que el modelo obtiene un rendimiento óptimo (0.92) cuando se usa un umbral de confianza de 0.452. El desplome del final de la gráfica es porque al pedirle mucho al modelo en cuanto a confianza, las detecciones decaen.
 
+## Labels:
 
+Esta gráfica analiza la composición del conjunto de datos a partir de los *labels*. No mide el rendimiento del modelo sion que da una radiografía de los datos que se han usado para entrenarlo.
 
+<img src="/VC_P4/runs/train_custom/exp2/labels.jpg">
+
+**Gráfica superior izquierda (Instances):** Es un gráfico de barras que cuenta cuántas instancias hay de cada clase (en este caso solo matrículas).
+
+**Gráfica inferior izquierda (Ubicación x, y):** Es un mapa de calor de las posiciones centrales de todas las matrículas (posición normalizada). El color azul oscuro muestra donde se concentran la mayoría de las matrículas. En este caso, están fuertemente agrupadas en el centro de la imagen. Esto implica que el modelo será muy bueno encontrando matrículas en el centro de la imagen pero que podría tener dificultades para encontrar matrículas en los bordes de las mismas.
+
+**Gráfica inferior derecha (Tamaño):** Es un mapa de calor del tamaño (ancho y alto) de las matrículas (normalizado). El hotspot (puntos más intensos) están pegados en laesquina inferior izquierda significando que la inmensa mayoría de las matrículas son pequeñas en realación con el tamaño total de la imagen. Esto implica que el modelo será experto en detectar matrículas pequeñas pero podría no generalizar tan bien si hay alguna matrícula muy grande o que ocupe toda la pantalla.
+
+**Gráfica superior derecha (Boxes):** Es una superposición de todas las *bounding boxes* del dataset, centradas en el mismo punto para comparar formas. Se confirma que casi todas las cajas están agrupadas en el centro y que hay una variedad en los *aspect ratios* en cuanto a la anchura pero todas tienden a ser pequeñas.
 
 
 
