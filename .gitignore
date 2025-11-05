@@ -3,10 +3,9 @@
 .venv/
 
 # Archivos de modelo (grandes)
-**/*.pt
-
-# Carpetas de resultados y logs
-**/runs/
+yolo11l.pt
+yolo11n.pt
+**/runs/train_custom/exp2/weights/last.pt
 
 # Archivos de datos generados (¡revisa si 'tracking_results.csv' debe ir aquí!)
 VC_P4/tracking_results.csv
