@@ -146,7 +146,7 @@ También hay una traza de código en el fichero [Exercises_P5](/VC_P5/Exercises_
 
 <h4 style="font-weight: bold; text-decoration: underline">Filtro aplicado en tiempo real:</h4>
 
-![Filtro_Tiempo_Real_Age]()
+![Filtro_Tiempo_Real_Age](/VC_P5/Gifts/Filtro_Tiempo_Real_Age.gif)
 
 ## FILTRO DE ESTRELLAS
 
@@ -164,7 +164,7 @@ Una vez detectado el parpadeo, el resto del programa se encarga de generar y ani
 
 <h4 style="font-weight: bold; text-decoration: underline">Filtro aplicado en tiempo real:</h4>
 
-![Filtro_Tiempo_Real_Stars]()
+![Filtro_Tiempo_Real_Stars](/VC_P5/Gifts/Filtro_Tiempo_Real_Stars.gif)
 
 ## FUENTES Y DOCUMENTACIÓN
 
@@ -173,11 +173,10 @@ Una vez detectado el parpadeo, el resto del programa se encarga de generar y ani
 - **Inteligencia Artificial Generativa (ChatGPT, Gemini):** Se ha utilizado para obtener el modelo de imágenes estáticas a partir del modelo de video creado para el filtro que utiliza la red neuronal clasificadora de caras por edad.
 
 - **Enlaces:**
-    - https://huggingface.co/microsoft/Florence-2-large
-    - https://github.com/JaidedAI/EasyOCR
+
     - https://pytorch.org/get-started/locally
     - https://chatgpt.com/
     - https://gemini.google.com
-    - https://www.investopedia.com/terms/r/returnoninvestment.asp
+    - https://susanqq.github.io/UTKFace/
 
 Para más documentación referente a las tareas, véase el [Notebook](Exercises_P5.ipynb) asociado a la carpeta de la práctica en cuestión **(VC_P5)**.
